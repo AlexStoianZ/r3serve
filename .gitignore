@@ -50,3 +50,38 @@
 
 # Embedded web-server pid file
 /.web-server-pid
+
+# Backend: Ignore environment files and cache
+backend/.env
+backend/.env.*
+backend/.gitignore
+
+# Ignore IDE/editor specific files
+frontend/.vscode/
+backend/.vscode/
+
+# Ignore composer/vendor files
+backend/vendor/
+
+# Ignore Symfony cache and log files
+backend/var/cache/
+backend/var/logs/
+
+# Ignore PHPUnit test artifacts
+backend/tests/_output/
+backend/phpunit.xml.dist
+
+# Ignore build and distribution files
+frontend/dist/
+frontend/build/
+
+# Ignore node_modules for frontend
+frontend/node_modules/
+
+# Ignore frontend generated files
+frontend/.vscode/
+frontend/.idea/
+
+# Ignore system and OS-specific files
+.DS_Store
+Thumbs.db
